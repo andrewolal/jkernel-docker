@@ -37,7 +37,7 @@ ENV J_BIN_FOLDER="/home/$USER/j903/bin"
 RUN wget http://www.jsoftware.com/download/j903/install/j903_linux64.tar.gz && \
     tar -zxvf j903_linux64.tar.gz
 
-RUN git clone https://github.com/martin-saurer/jkernel.git
+RUN git clone https://github.com/joebo/jkernel.git
 WORKDIR ${HOME}/jkernel
 
 RUN python setup.py install
